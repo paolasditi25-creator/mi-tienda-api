@@ -1,0 +1,17 @@
+MI TIENDA API  (backend)  -  Python + FastAPI + Supabase  -  se publica en Vercel
+=================================================================================
+api/index.py          -> El codigo de la API (todas las ventanillas)
+requirements.txt      -> La lista del super de Python (librerias)
+vercel.json           -> Le dice a Vercel que todas las rutas van a api/index.py
+supabase_tabla.sql    -> La tabla usuarios (ya la tienes creada en Supabase)
+.env.example          -> Ejemplo de llaves para probar en tu compu (opcional)
+correr_local.py       -> Para correr la API en tu compu (opcional)
+
+Rutas:
+  GET    /                 -> {"mensaje":"API de Mi Tienda funcionando"}
+  GET    /users            -> lista de usuarios en JSON (como fakestoreapi.com/users)
+  GET    /docs             -> documentacion interactiva automatica
+  POST   /auth/register    -> registro (rol usuario)
+  POST   /auth/login       -> login (token + rol)
+  GET    /usuarios         -> lista (solo admin)
+  DELETE /usuarios/{id}    -> eliminar (solo admin)
